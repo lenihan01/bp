@@ -3,7 +3,7 @@
   tasks:
     - name: Create a simple text file
       copy:
-        dest: "~/project/hello.txt"
+        dest: "~/hello.txt"
         content: |
           Hello from Ansible!
           This file was created using the Ansible copy module.
