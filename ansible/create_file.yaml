@@ -1,0 +1,10 @@
+- name: Create a file with content
+  hosts: local
+  tasks:
+    - name: Create a simple text file
+      copy:
+        dest: "~/project/hello.txt"
+        content: |
+          Hello from Ansible!
+          This file was created using the Ansible copy module.
+          Current date: {{ ansible_date_time.date }}
